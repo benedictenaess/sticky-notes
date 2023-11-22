@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(45, 33, 85);
+}
+
+#page-title {
+	flex-basis: 10%;
+	padding: 1rem;
+	color: white;
+}
+
+.add-note-container {
+	flex-basis: 25%;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-container {
+	flex-basis: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+textarea {
+	resize: none;
+	outline: none;
+	width: 35%;
+	height: 75%;
+	padding: 1rem;
+	transition: 200ms;
+	border-radius: 1px;
+}
+
+textarea:focus {
+	box-shadow: 0 0 14px rgb(255, 140, 0);
+	transition: 200ms;
+}
+
+.submit-button {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: rgb(255, 140, 0);
+	font-size: 3rem;
+	color: white;
+	transition: 200ms;
+}
+
+.submit-button:hover {
+	transform: scale(1.1);
+	transition: 200ms;
+}
+
+.error-message {
+	display: none;
+	flex-basis: 25%;
+	text-align: center;
+	color: red;
+}
+
+.display-notes-container {
+	flex-basis: 65%;
+}
